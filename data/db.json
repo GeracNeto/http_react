@@ -74,6 +74,41 @@
       "name": "Headset",
       "price": "99.99",
       "id": 16
+    },
+    {
+      "name": "Caixa de som",
+      "price": "79.99",
+      "id": 17
+    },
+    {
+      "name": "Cabo USB",
+      "price": "9.99",
+      "id": 18
+    },
+    {
+      "name": "Cabo HDMI",
+      "price": "49.99",
+      "id": 19
+    },
+    {
+      "name": "Monitor LG 27''",
+      "price": "1299.99",
+      "id": 20
+    },
+    {
+      "name": "Cadeira Gamer",
+      "price": "799.99",
+      "id": 21
+    },
+    {
+      "name": "PS4",
+      "price": "1999.99",
+      "id": 22
+    },
+    {
+      "name": "XBOX S",
+      "price": "2499.99",
+      "id": 23
     }
   ]
 }
