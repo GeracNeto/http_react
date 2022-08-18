@@ -14,10 +14,11 @@ const url = 'http://localhost:3000/products'
 
 function App() {
 
-  const [products, setProducts] = useState([])
+  // const [products, setProducts] = useState([])
 
   // 4 - Custom hooks
   const { data: items, httpConfig, loading } = useFecth(url) // Estou importando o return da função useFetch que eu criei em useFetch.js -> Destructuring
+  console.log(items)
 
   const [name, setName] = useState('')
   const [price, setPrice] = useState('')

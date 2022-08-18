@@ -51,7 +51,6 @@ export const useFecth = (url) => {
     }, [url, callFetch])
 
     // 5 Refatorando POST
-
     useEffect(() => {
 
         const httpRequest = async () => {
@@ -59,6 +58,8 @@ export const useFecth = (url) => {
                 let fetchOptions = [url, config]
 
                 const res = await fetch(...fetchOptions)
+
+                console.log(fetchOptions)
 
                 const json = await res.json()
 
