@@ -1,6 +1,6 @@
 import './App.css'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 // 4 - Custom hook
 import { useFecth } from './hooks/useFetch'
@@ -12,7 +12,7 @@ function App() {
   const [products, setProducts] = useState([])
 
   // 4 - Custom hooks
-  const { data: items } = useFecth(url) // Estou importando o return da função useFetch que eu criei em useFetch.js -> Destructuring
+  const { data: items, httpConfig } = useFecth(url) // Estou importando o return da função useFetch que eu criei em useFetch.js -> Destructuring
 
   const [name, setName] = useState('')
   const [price, setPrice] = useState('')
@@ -52,6 +52,7 @@ function App() {
       */
     }
 
+    /*
     const res = await fetch(url, {
       method: "POST",
       headers: {
@@ -59,11 +60,15 @@ function App() {
       },
       body: JSON.stringify(product)
     })
-
+    
     // 3 Carregamento dinâmico
     const addedProduct = await res.json()
 
     setProducts(prevProducts => [...prevProducts, addedProduct])
+    */
+
+    // 5 - Refatorando POST
+    httpConfig(product, "POST")
 
     setName('')
     setPrice('')
