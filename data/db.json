@@ -39,6 +39,21 @@
       "name": "Teclado",
       "price": "389.99",
       "id": 9
+    },
+    {
+      "name": "Mouse",
+      "price": "59.99",
+      "id": 10
+    },
+    {
+      "name": "Mouse",
+      "price": "59.99",
+      "id": 11
+    },
+    {
+      "name": "Mouse",
+      "price": "59.99",
+      "id": 12
     }
   ]
 }
