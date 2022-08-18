@@ -1,79 +1,9 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Camisa",
-      "price": 59.9
-    },
-    {
-      "id": 2,
-      "name": "Calça vermelha",
-      "price": 90
-    },
-    {
-      "id": 3,
-      "name": "Boné aba reta",
-      "price": 29.9
-    },
-    {
-      "name": "Caderno",
-      "price": "14.99",
-      "id": 5
-    },
-    {
-      "name": "Borracha",
-      "price": "3.99",
-      "id": 6
-    },
-    {
-      "name": "Livro",
-      "price": "39.99",
-      "id": 7
-    },
-    {
-      "name": "Luminária",
-      "price": "129.99",
-      "id": 8
-    },
-    {
-      "name": "Teclado",
-      "price": "389.99",
-      "id": 9
-    },
-    {
-      "name": "Suporte",
-      "price": "15.99",
-      "id": 10
-    },
-    {
       "name": "Mousepad",
       "price": "74.99",
       "id": 11
-    },
-    {
-      "name": "Carregador Iphone",
-      "price": "109.99",
-      "id": 12
-    },
-    {
-      "name": "Carregador Portátil",
-      "price": "149.99",
-      "id": 13
-    },
-    {
-      "name": "Cubo mágico",
-      "price": "14.99",
-      "id": 14
-    },
-    {
-      "name": "Lanterna",
-      "price": "34.99",
-      "id": 15
-    },
-    {
-      "name": "Headset",
-      "price": "99.99",
-      "id": 16
     },
     {
       "name": "Caixa de som",
@@ -81,29 +11,9 @@
       "id": 17
     },
     {
-      "name": "Cabo USB",
-      "price": "9.99",
-      "id": 18
-    },
-    {
-      "name": "Cabo HDMI",
-      "price": "49.99",
-      "id": 19
-    },
-    {
-      "name": "Monitor LG 27''",
-      "price": "1299.99",
-      "id": 20
-    },
-    {
       "name": "Cadeira Gamer",
       "price": "799.99",
       "id": 21
-    },
-    {
-      "name": "PS4",
-      "price": "1999.99",
-      "id": 22
     },
     {
       "name": "XBOX S",
@@ -111,14 +21,19 @@
       "id": 23
     },
     {
-      "name": "Iphone 13",
-      "price": "10799.99",
-      "id": 24
-    },
-    {
       "name": "Mackbook",
       "price": "7999.99",
       "id": 25
+    },
+    {
+      "name": "Tabuleiro de xadrez",
+      "price": "299.99",
+      "id": 26
+    },
+    {
+      "name": "Bermuda",
+      "price": "79.99",
+      "id": 27
     }
   ]
 }
