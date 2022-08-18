@@ -11,7 +11,7 @@ function App() {
   const [name, setName] = useState('')
   const [price, setPrice] = useState('')
 
-  // 1 Resgatando dados
+  // 1 Resgatando dados (GET)
   useEffect(() => {
 
     async function fecthData() {
@@ -26,7 +26,7 @@ function App() {
 
   //console.log(products)
 
-  // Add de produtos
+  // Add de produtos (POST)
   const handleSubmit = async (e) => {
 
     e.preventDefault()
@@ -52,6 +52,14 @@ function App() {
       body: JSON.stringify(product)
     })
 
+    // 3 Carregamento dinâmico
+    const addedProduct = await res.json()
+
+    setProducts(prevProducts => [...prevProducts, addedProduct]) 
+
+    setName('')
+    setPrice('')
+    
     console.log(product)
   }
 
