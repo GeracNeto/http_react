@@ -16,11 +16,6 @@
       "price": 29.9
     },
     {
-      "name": "caneta",
-      "price": "3.99",
-      "id": 4
-    },
-    {
       "name": "Caderno",
       "price": "14.99",
       "id": 5
@@ -29,6 +24,21 @@
       "name": "Borracha",
       "price": "3.99",
       "id": 6
+    },
+    {
+      "name": "Livro",
+      "price": "39.99",
+      "id": 7
+    },
+    {
+      "name": "Luminária",
+      "price": "129.99",
+      "id": 8
+    },
+    {
+      "name": "Teclado",
+      "price": "389.99",
+      "id": 9
     }
   ]
 }
