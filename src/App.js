@@ -1,6 +1,11 @@
+// CSS
 import './App.css'
 
+// React
 import { useState } from 'react'
+
+// Components
+import Loading from './components/Loading';
 
 // 4 - Custom hook
 import { useFecth } from './hooks/useFetch'
@@ -12,7 +17,7 @@ function App() {
   const [products, setProducts] = useState([])
 
   // 4 - Custom hooks
-  const { data: items, httpConfig } = useFecth(url) // Estou importando o return da função useFetch que eu criei em useFetch.js -> Destructuring
+  const { data: items, httpConfig, loading } = useFecth(url) // Estou importando o return da função useFetch que eu criei em useFetch.js -> Destructuring
 
   const [name, setName] = useState('')
   const [price, setPrice] = useState('')
@@ -79,9 +84,13 @@ function App() {
   return (
     <div className="App">
       <h1>Lista de Produtos</h1>
-      <ul>
-        {items && items.map(product => (<li key={product.id}>{product.name} - R$ {product.price}</li>))}
-      </ul>
+      {/* 6 - Loading */}
+      {loading && <Loading />}
+      {!loading && (
+        <ul>
+          {items && items.map(product => (<li key={product.id}>{product.name} - R$ {product.price}</li>))}
+        </ul>
+      )}
       <div className="add-product">
         <form onSubmit={handleSubmit}>
           <label>
