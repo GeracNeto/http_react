@@ -5,13 +5,9 @@
   justify-content: center;
 }
 
-ul{
-  margin-bottom: 30px;
-}
-
 .add-product {
   border-top: 1px solid;
-  width: 300px;
+  width: 500px;
   padding-top: 10px;
 }
 
@@ -26,4 +22,28 @@ form input {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+}
+
+.product{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2px 0;
+  margin-bottom: 5px;
+}
+
+.product button{
+  margin-left: 20px;
+  color: #f00;
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+.product button:hover{
+  background-color: rgba(95, 69, 69, 0.466);
+  cursor: pointer;
+}
+
+.product:hover{
+  font-weight: bold;
 }
