@@ -82,6 +82,19 @@ function App() {
     console.log(product)
   }
 
+  // Deletar produtos (DELETE)
+  const handleDelete = async (e) => {
+
+    e.preventDefault()
+
+    const productId = e.target.name
+
+    console.log(productId)
+
+    httpConfig(productId, "DELETE")
+
+  }
+
   return (
     <div className="App">
       <h1>Lista de Produtos</h1>
@@ -91,7 +104,12 @@ function App() {
       {error && <p>{error}</p>}
       {!error && (
         <ul>
-          {items && items.map(product => (<li key={product.id}>{product.name} - R$ {product.price}</li>))}
+          {items && items.map(product => (
+            <div className='product' key={product.id} >
+              <li>{product.name} - R$ {product.price}</li>
+              <button name={product.id} onClick={handleDelete}>X</button>
+            </div>
+          ))}
         </ul>
       )}
       <div className="add-product">
@@ -105,7 +123,6 @@ function App() {
             <input type="number" value={price} name='name' onChange={e => setPrice(e.target.value)} required />
           </label>
           {loading ? (<input type='submit' disabled value='Aguarde' />) : (<input type='submit' value='Criar' />)}
-
         </form>
       </div>
     </div>
