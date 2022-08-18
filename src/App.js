@@ -95,13 +95,14 @@ function App() {
         <form onSubmit={handleSubmit}>
           <label>
             Nome:
-            <input type="text" value={name} name='name' onChange={e => setName(e.target.value)} />
+            <input type="text" value={name} name='name' onChange={e => setName(e.target.value)} required />
           </label>
           <label>
             Preço:
-            <input type="number" value={price} name='name' onChange={e => setPrice(e.target.value)} />
+            <input type="number" value={price} name='name' onChange={e => setPrice(e.target.value)} required />
           </label>
-          <input type="submit" value='Criar' />
+          {loading ? (<input type='submit' disabled value='Aguarde' />) : (<input type='submit' value='Criar' />)}
+
         </form>
       </div>
     </div>
