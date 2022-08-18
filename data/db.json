@@ -109,6 +109,16 @@
       "name": "XBOX S",
       "price": "2499.99",
       "id": 23
+    },
+    {
+      "name": "Iphone 13",
+      "price": "10799.99",
+      "id": 24
+    },
+    {
+      "name": "Mackbook",
+      "price": "7999.99",
+      "id": 25
     }
   ]
 }
