@@ -41,19 +41,39 @@
       "id": 9
     },
     {
-      "name": "Mouse",
-      "price": "59.99",
+      "name": "Suporte",
+      "price": "15.99",
       "id": 10
     },
     {
-      "name": "Mouse",
-      "price": "59.99",
+      "name": "Mousepad",
+      "price": "74.99",
       "id": 11
     },
     {
-      "name": "Mouse",
-      "price": "59.99",
+      "name": "Carregador Iphone",
+      "price": "109.99",
       "id": 12
+    },
+    {
+      "name": "Carregador Portátil",
+      "price": "149.99",
+      "id": 13
+    },
+    {
+      "name": "Cubo mágico",
+      "price": "14.99",
+      "id": 14
+    },
+    {
+      "name": "Lanterna",
+      "price": "34.99",
+      "id": 15
+    },
+    {
+      "name": "Headset",
+      "price": "99.99",
+      "id": 16
     }
   ]
 }
